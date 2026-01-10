@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Official Regulation Mock Registry</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
+        body { font-family: 'Inter', sans-serif; }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-800 antialiased">
+
+
+
+    <nav class="bg-blue-900 text-white p-4 shadow-md">
+        <div class="container mx-auto flex justify-between items-center">
+            <div class="flex items-center space-x-2">
+                <!-- Generic Government-looking Icon -->
+                <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"></path></svg>
+                <span class="font-bold text-xl tracking-tight">GovRegistry Mock</span>
+            </div>
+            <div class="text-sm bg-blue-800 py-1 px-3 rounded-full">
+                Test Environment - Not for Official Use
+            </div>
+        </div>
+    </nav>
+
+    <main class="container mx-auto mt-10 max-w-4xl p-6 bg-white shadow-lg rounded-xl border border-slate-200">
+        
+        <!-- HEADER SECTION -->
+        <header class="mb-8 border-b pb-6">
+            <h1 class="text-3xl font-bold text-slate-900 mb-2">Regulation 101: Widget Compliance Standards</h1>
+            <p class="text-slate-500">Official guidelines for the manufacturing and distribution of digital widgets.</p>
+            
+            <!-- [CHANGE TARGET 1] Update this date to test Metadata changes -->
+            <div class="mt-4 flex items-center space-x-4 text-sm">
+                <span class="bg-green-100 text-green-800 px-2 py-1 rounded font-semibold">Active</span>
+                <span class="text-slate-500">Last Updated: <strong id="last-updated">December 20, 2025</strong></span>
+            </div>
+        </header>
+
+        <!-- CRITICAL DATA SECTION (The AI targets) -->
+        <section class="mb-10">
+            <h2 class="text-xl font-semibold text-slate-800 mb-4 border-l-4 border-blue-600 pl-3">Current Fee Schedule</h2>
+            
+            <div class="overflow-x-auto">
+                <table class="min-w-full text-left text-sm whitespace-nowrap">
+                    <thead class="uppercase tracking-wider border-b-2 border-slate-200 bg-slate-50">
+                        <tr>
+                            <th scope="col" class="px-6 py-4 font-semibold text-slate-600">Category</th>
+                            <th scope="col" class="px-6 py-4 font-semibold text-slate-600">Code</th>
+                            <th scope="col" class="px-6 py-4 font-semibold text-slate-600">Fee (USD)</th>
+                        </tr>
+                    </thead>
+                    <tbody class="divide-y divide-slate-100">
+                        
+                        <!-- [CHANGE TARGET 2] Change the Price here -->
+                        <tr class="hover:bg-slate-50">
+                            <td class="px-6 py-4">Standard License</td>
+                            <td class="px-6 py-4 text-slate-500">LIC-001</td>
+                            <td class="px-6 py-4 font-bold text-blue-700">$10,500.00</td> 
+                        </tr>
+
+                        <!-- [CHANGE TARGET 3] Change the Price here -->
+                        <tr class="hover:bg-slate-50">
+                            <td class="px-6 py-4">Enterprise Renewal</td>
+                            <td class="px-6 py-4 text-slate-500">ENT-RNW</td>
+                            <td class="px-6 py-4 font-bold text-blue-700">$9,500.00</td>
+                        </tr>
+
+                        <tr class="hover:bg-slate-50">
+                            <td class="px-6 py-4">Late Penalty</td>
+                            <td class="px-6 py-4 text-slate-500">PEN-LATE</td>
+                            <td class="px-6 py-4 font-bold text-red-600">15% Surcharge</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <!-- TEXT CONTENT SECTION -->
+        <section class="prose max-w-none text-slate-600">
+            <h2 class="text-xl font-semibold text-slate-800 mb-4 border-l-4 border-blue-600 pl-3">Compliance Requirements</h2>
+            
+            <!-- [CHANGE TARGET 4] Change the text wording here to test Semantic Diff (phrasing vs fact) -->
+            <p class="mb-4">
+                All entities must submit their annual audit reports by the <strong>31st of December</strong> each fiscal year. 
+                Failure to comply will result in an immediate suspension of operating licenses.
+            </p>
+            
+            <p>
+                Operators are required to maintain a minimum capital reserve of <strong>$50,000</strong> at all times.
+            </p>
+        </section>
+
+        <footer class="mt-12 pt-6 border-t text-center text-slate-400 text-sm">
+            &copy; 2025 Mock Government Registry. All rights reserved. <br>
+            Reference ID: <span class="font-mono">DOC-9928-X</span>
+        </footer>
+
+    </main>
+
+</body>
+</html>
